@@ -33,6 +33,7 @@ public class Order {
 		}
 	}
 	/*
+	 *função para o uso de switch case
 	public double calculateFee2() {
 		 switch (totalValue) {
 		case 100: 
