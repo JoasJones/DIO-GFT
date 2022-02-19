@@ -14,13 +14,15 @@ public class Order {
 	}
 	
 	
-	@Override
+	
+	
+	/*@Override
 	public String toString() {
 		return "Order={"
-				+ "code='" +  code +"'" + "Valor: " +totalValue +
+				+ "code='" +  code +"'" +
 				"}";
 	}
-
+*/
 	
 	public double calculateFee() {
 		 if(this.totalValue>100) {
@@ -30,7 +32,17 @@ public class Order {
 			return this.totalValue;
 		}
 	}
-	
-	
-
+	/*
+	public double calculateFee2() {
+		 switch (totalValue) {
+		case 100: 
+			return totalValue * 0.99;
+		case 200:
+			return totalValue * 1.99;
+		default:
+			return totalValue;
+		}
+		
+	}
+*/
 }
