@@ -7,6 +7,8 @@ public class Order {
 	private final String code;
 	private final double totalValue;
 	
+	private String[] itens;
+	
 	public Order(String code, double totalValue) {
 		this.code = code;
 		this.totalValue = totalValue;
@@ -14,15 +16,52 @@ public class Order {
 	}
 	
 	
+	public void printItens() {
+		for (String i: itens) {
+			System.out.print(i);
+		}
+			
+		
+	}
+	
+	/*
+	public void printItens() {
+		for (int i = 0; i<itens.length; i++) {
+			System.out.print(itens[i]);
+		}
+			
+		
+	}
 	
 	
-	/*@Override
+	public void printItens() {
+		int i = 0;
+		
+		do {
+			System.out.println(itens[i]);
+			i++;
+		}while(i< itens.length);
+			
+		
+	}
+	
+	
+	public void printItens() {
+		int i = 0;
+		while (i< itens.length) {
+			System.out.print(itens[i]);
+			i++;
+		}
+		
+	}
+	
+	@Override
 	public String toString() {
 		return "Order={"
 				+ "code='" +  code +"'" +
 				"}";
 	}
-*/
+
 	
 	public double calculateFee() {
 		 if(this.totalValue>100) {
