@@ -16,7 +16,7 @@ public class Order {
 	
 	// definição das variaveis 
 	private final String code;
-	private final double totalValue;
+	//private final double totalValue;
 	private final BigDecimal totalValue2;
 	
 	
@@ -28,9 +28,8 @@ public class Order {
 	 * @param totalValue valor total do pedido double
 	 * @param totalValue2 valor total do pedido double BigDecimal
 	 */
-	public Order(String code, double totalValue, BigDecimal totalValue2) {
+	public Order(String code, BigDecimal totalValue2) {
 		this.code = code;
-		this.totalValue = totalValue;
 		this.totalValue2 = totalValue2;
 		
 	}
